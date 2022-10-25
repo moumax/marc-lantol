@@ -25,6 +25,7 @@ export function About() {
         ))}
       </div>
       <Button onClick={() => navigate("/")}>Accueil</Button>
+      <Button onClick={() => navigate("/contact")}>Contactez moi</Button>
     </div>
   );
 }
