@@ -5,7 +5,7 @@ import { About } from "./pages/About/About";
 
 function App() {
   return (
-    <div className="App">
+    <div className="h-[100vh] bg-slate-400">
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
