@@ -1,6 +1,5 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { Navigate } from "react-router-dom";
 import Button from "../../components/Button";
 
 export function Contact() {
@@ -42,7 +41,7 @@ export function Contact() {
         <Button>Envoyer le formulaire</Button>
       </form>
       <Button onClick={() => navigate("/about")}>Skills</Button>
-      <Button onClick={() => navigate("/")}>Suivant</Button>
+      <Button onClick={() => navigate("/projects")}>Mes projets</Button>
     </>
   );
 }
