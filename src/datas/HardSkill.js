@@ -30,12 +30,12 @@ const HardSkill = [
   {
     id: 5,
     image: express,
-    texte: "Express Js",
+    texte: "Express",
   },
   {
     id: 6,
     image: git,
-    texte: "Git / Github",
+    texte: "Git",
   },
   {
     id: 7,

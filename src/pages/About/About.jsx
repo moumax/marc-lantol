@@ -13,15 +13,14 @@ export function About() {
 
   return (
     <div>
-      <h1 className="text-5xl text-center mb-36">A propos</h1>
       <h2 className="text-3xl m-4 text-center">Soft skills</h2>
-      <div className="flex gap-20 justify-center mb-20">
+      <div className="flex gap-20 justify-center mb-10">
         {SoftSkill.map((skill) => (
           <SoftSkills skill={skill} key={skill.id} />
         ))}
       </div>
       <h2 className="text-3xl m-4 text-center">Hard skills</h2>
-      <div className="flex gap-20 justify-center mb-20">
+      <div className="flex gap-20 justify-center mb-10">
         {HardSkill.map((skill) => (
           <HardSkills skill={skill} key={skill.id} />
         ))}
