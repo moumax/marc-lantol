@@ -6,8 +6,9 @@ import lumios from "../assets/projects/lumios.png";
 
 const portfolioDatas = [
   {
+    titre: "Lumios",
     image: lumios,
-    lien: "https:lumios.com",
+    lien: "https://github.com/WildCodeSchool/2022-03-JS-RemoteFR-TeamKarma-P3-Lumios",
     description:
       "Aboutissement de ma formation, le projet professionel Lumios avait pour but d'apporter une solution à un porteur de projet",
     github: "https:github.com/moumax/",
@@ -16,8 +17,9 @@ const portfolioDatas = [
     techno3: "Sass",
   },
   {
+    titre: "The wild post",
     image: post,
-    lien: "https:lumios.com",
+    lien: "https://clemdsc.github.io/",
     description:
       'Premier project de ma formation, "The wild post" est une page statique en Html et Css. Il s\'agissait de présenter nos premiers pas à travers un journal',
     github: "https:github.com/moumax/",
@@ -25,8 +27,9 @@ const portfolioDatas = [
     techno2: "Css",
   },
   {
+    titre: "Movieflix",
     image: movieflix,
-    lien: "https:lumios.com",
+    lien: "https://project-2-teamkarma-tigers.netlify.app/",
     description:
       'Second projet, "MovieFlix" nous à permis de découvrir React, ainsi que l\'utilisation des Api à distance.',
     github: "https:github.com/moumax/",
@@ -34,10 +37,11 @@ const portfolioDatas = [
     techno2: "Css",
   },
   {
+    titre: "Observatoire de Saint Jean Le Blanc",
     image: obsstjean,
     lien: "https://obsstjean.fr/",
     description:
-      "Le site de l'observatoire astronomique de Saint Jean le Blanc a été conçu par mes soins il y'a 3 ans. C'était mes premiers pas en développement web !",
+      "Le site de l'observatoire astronomique de Saint Jean Le Blanc a été conçu par mes soins il y'a 3 ans. C'était mes premiers pas en développement web !",
     github: "https:github.com/moumax/",
     techno1: "Html",
     techno2: "Css",
