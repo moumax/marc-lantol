@@ -8,7 +8,7 @@ import { Projects } from "./pages/Projects/Projects";
 function App() {
   return (
     //min-h-screen to have a full background cover
-    <div className="min-h-screen bg-gradient-to-r from-sky-500 to-indigo-500">
+    <div className="min-h-screen bg-gradient-to-r from-blue-400 to-blue-900 p-10">
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
