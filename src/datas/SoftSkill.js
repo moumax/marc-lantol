@@ -1,7 +1,7 @@
 import autonomie from "../assets/softskills/autonomie.png";
 import organisation from "../assets/softskills/organisation.png";
 import teamwork from "../assets/softskills/teamwork.png";
-import proactivity from "../assets/softskills/proactivity.png";
+import proactif from "../assets/softskills/proactif.png";
 
 const SoftSkill = [
   {
@@ -21,7 +21,7 @@ const SoftSkill = [
   },
   {
     id: 4,
-    image: proactivity,
+    image: proactif,
     texte: "Proactivité",
   },
 ];
