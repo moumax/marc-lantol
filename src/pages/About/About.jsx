@@ -14,19 +14,19 @@ export function About() {
   return (
     <div>
       <h2 className="text-3xl m-4 text-center">Soft skills</h2>
-      <div className="flex gap-20 justify-center mb-10">
+      <div className="flex gap-20 justify-center mb-10 flex-wrap">
         {SoftSkill.map((skill) => (
           <SoftSkills skill={skill} key={skill.id} />
         ))}
       </div>
       <h2 className="text-3xl m-4 text-center">Hard skills</h2>
-      <div className="flex gap-20 justify-center mb-10">
+      <div className="flex gap-20 justify-center mb-10 flex-wrap">
         {HardSkill.map((skill) => (
           <HardSkills skill={skill} key={skill.id} />
         ))}
       </div>
       <h2 className="text-3xl m-4 text-center">Hobbies</h2>
-      <div className="flex gap-20 justify-center">
+      <div className="flex gap-20 justify-center flex-wrap">
         {Hobbie.map((like) => (
           <Hobbies like={like} key={like.id} />
         ))}
