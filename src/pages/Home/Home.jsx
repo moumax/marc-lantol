@@ -7,8 +7,8 @@ export function Home() {
   return (
     <div className="text-center ">
       <h1 className="text-4xl">Bonjour !</h1>
-      <p className="text-2xl">Je m'appelle Marc LANTOL</p>
-      <p>Je suis développeur Full Stack</p>
+      <p className="text-2xl">Marc LANTOL</p>
+      <p>Développeur web Full Stack</p>
       <Button type={"button"} onClick={() => navigate("/about")}>
         Continuer
       </Button>
