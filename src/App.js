@@ -8,7 +8,7 @@ import { Projects } from "./pages/Projects/Projects";
 function App() {
   return (
     //min-h-screen to have a full background cover
-    <div className="min-h-screen bg-slate-400">
+    <div className="min-h-screen bg-slate-700">
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
