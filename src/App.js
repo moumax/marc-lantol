@@ -3,14 +3,17 @@ import "./App.css";
 import { Home } from "./pages/Home/Home";
 import { About } from "./pages/About/About";
 import { Contact } from "./pages/Contact/Contact";
+import { Projects } from "./pages/Projects/Projects";
 
 function App() {
   return (
-    <div className="h-[100vh] bg-slate-400">
+    //min-h-screen to have a full background cover
+    <div className="min-h-screen bg-gradient-to-r from-sky-500 to-indigo-500">
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/projects" element={<Projects />} />
       </Routes>
     </div>
   );

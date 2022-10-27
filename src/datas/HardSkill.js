@@ -1,12 +1,15 @@
-import javascript from "../assets/hardskills/javascript.png";
+import js from "../assets/hardskills/js.png";
 import html from "../assets/hardskills/html.png";
 import notion from "../assets/hardskills/notion.png";
 import node from "../assets/hardskills/node.png";
+import express from "../assets/hardskills/express.png";
+import git from "../assets/hardskills/git.png";
+import css from "../assets/hardskills/css.png";
 
 const HardSkill = [
   {
     id: 1,
-    image: javascript,
+    image: js,
     texte: "Javascript",
   },
   {
@@ -23,6 +26,21 @@ const HardSkill = [
     id: 4,
     image: node,
     texte: "Node",
+  },
+  {
+    id: 5,
+    image: express,
+    texte: "Express Js",
+  },
+  {
+    id: 6,
+    image: git,
+    texte: "Git / Github",
+  },
+  {
+    id: 7,
+    image: css,
+    texte: "Css",
   },
 ];
 
