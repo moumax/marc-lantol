@@ -14,7 +14,22 @@ function App() {
     <DarkContext.Provider value={[dark, setDark]}>
       {/* min-h-screen to have a full background cover */}
       <div className="min-h-screen bg-gradient-to-r from-blue-400 to-blue-900 p-10">
-        {!dark ? <div>toto</div> : <div>Pastoto</div>}
+        <div className="flex left-1/2 absolute m-4">
+          <div className="form-check form-switch">
+            <input
+              className="form-check-input appearance-none w-9 -ml-10 rounded-full float-left h-5 align-top bg-black bg-no-repeat bg-contain checked:bg-gray-300 focus:outline-none cursor-pointer shadow-sm"
+              type="checkbox"
+              role="switch"
+              id="flexSwitchCheckDefault"
+            ></input>
+            <label
+              className="form-check-label inline-block text-gray-800"
+              htmlFor="flexSwitchCheckDefault"
+            >
+              White Mode
+            </label>
+          </div>
+        </div>
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
