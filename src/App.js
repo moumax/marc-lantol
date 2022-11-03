@@ -23,7 +23,7 @@ function App() {
   return (
     <>
       <DarkContext.Provider value={[dark, setDark]}>
-        <div className="flex left-1/2 absolute m-4">
+        <div className="flex absolute left-1/2 m-4">
           <div className="form-check form-switch">
             <input
               className="form-check-input appearance-none w-9 -ml-10 rounded-full float-left h-5 align-top bg-black bg-no-repeat bg-contain checked:bg-gray-300 focus:outline-none cursor-pointer shadow-sm"
@@ -32,12 +32,21 @@ function App() {
               id="flexSwitchCheckDefault"
               onClick={switcher}
             ></input>
-            <label
-              className="form-check-label inline-block text-gray-800"
-              htmlFor="flexSwitchCheckDefault"
-            >
-              White Mode
-            </label>
+            {dark ? (
+              <label
+                className="form-check-label inline-block text-black"
+                htmlFor="flexSwitchCheckDefault"
+              >
+                White Mode
+              </label>
+            ) : (
+              <label
+                className="form-check-label inline-block text-white"
+                htmlFor="flexSwitchCheckDefault"
+              >
+                White Mode
+              </label>
+            )}
           </div>
         </div>
         {dark === false ? (
