@@ -16,37 +16,52 @@ export function Contact() {
   }
 
   return (
-    <>
-      <form className="flex flex-col w-96 items-center" onSubmit={handleSubmit}>
-        <label for="full-name">Prénom, nom</label>
+    <div>
+      <div className="flex justify-between mb-28">
+        <Button onClick={() => navigate("/about")}>Skills</Button>
+        <Button onClick={() => navigate("/projects")}>Mes projets</Button>
+      </div>
+      <form
+        className="flex flex-col w-full items-center justify-center text-xl font-bold"
+        onSubmit={handleSubmit}
+      >
+        <label className="m-3" for="full-name">
+          Prénom, nom
+        </label>
         <input
-          className=" rounded-md pl-2"
+          className=" rounded-md pl-2 w-2/3"
           type="text"
           name="name"
           id="full-name"
           placeholder="Prénom, nom"
           required=""
         ></input>
-        <label htmlFor="email">Adresse email</label>
+        <label className="m-3" htmlFor="email">
+          Adresse email
+        </label>
         <input
-          className=" rounded-md  pl-2"
+          className=" rounded-md  pl-2 w-2/3"
           id="email"
           type="email"
           name="email"
           placeholder="toto@gmail.com"
         />
-        <label for="telephone">Numéro de téléphone (Optionnel)</label>
+        <label className="m-3" for="telephone">
+          Numéro de téléphone (Optionnel)
+        </label>
         <input
-          className=" rounded-md pl-2"
+          className=" rounded-md pl-2 w-2/3"
           type="telephone"
           name="telephone"
           id="telephone"
           placeholder="06 21 32 43 12"
         ></input>
         <ValidationError prefix="Email" field="email" errors={state.errors} />
-        <label for="message">Votre message</label>
+        <label className="m-3" for="message">
+          Votre message
+        </label>
         <textarea
-          className=" rounded-md pl-2"
+          className=" rounded-md pl-2 w-2/3 mb-12"
           id="message"
           name="message"
           placeholder="......."
@@ -60,8 +75,6 @@ export function Contact() {
           Submit
         </Button>
       </form>
-      <Button onClick={() => navigate("/about")}>Skills</Button>
-      <Button onClick={() => navigate("/projects")}>Mes projets</Button>
-    </>
+    </div>
   );
 }

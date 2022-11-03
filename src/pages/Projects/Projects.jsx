@@ -6,9 +6,12 @@ import PortfolioDatas from "../../datas/PortfolioDatas";
 export function Projects() {
   const navigate = useNavigate();
   return (
-    //mx-auto to on div and image to center image
-    <div className="flex flex-col items-center  mx-auto">
-      <h1 className="text-6xl mb-14">Mes projects</h1>
+    <div className="flex flex-col">
+      <div className="flex justify-between mb-10">
+        <Button onClick={() => navigate("/contact")}>Me contacter</Button>
+        <Button onClick={() => navigate("/")}>Suivant</Button>
+      </div>
+      <h1 className="text-6xl mb-14 text-center">Mes projects</h1>
       {PortfolioDatas.map((data) => (
         <div className="flex flex-col items-center">
           <h2 className="text-4xl mb-5">{data.titre}</h2>
@@ -39,8 +42,6 @@ export function Projects() {
           </ul>
         </div>
       ))}
-      <Button onClick={() => navigate("/contact")}>Me contacter</Button>
-      <Button onClick={() => navigate("/")}>Suivant</Button>
     </div>
   );
 }

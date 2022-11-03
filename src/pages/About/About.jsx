@@ -13,6 +13,10 @@ export function About() {
 
   return (
     <div>
+      <div className="flex justify-between mb-36">
+        <Button onClick={() => navigate("/")}>Accueil</Button>
+        <Button onClick={() => navigate("/contact")}>Contactez moi</Button>
+      </div>
       <h2 className="text-3xl m-4 text-center">Soft skills</h2>
       <div className="flex gap-20 justify-center mb-10">
         {SoftSkill.map((skill) => (
@@ -31,8 +35,6 @@ export function About() {
           <Hobbies like={like} key={like.id} />
         ))}
       </div>
-      <Button onClick={() => navigate("/")}>Accueil</Button>
-      <Button onClick={() => navigate("/contact")}>Contactez moi</Button>
     </div>
   );
 }
