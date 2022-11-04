@@ -10,23 +10,25 @@ export function Home() {
   return (
     <div className="text-center ">
       {french ? (
-        <>
-          <h1 className="text-4xl">Bonjour !</h1>
-          <p className="text-2xl">Marc LANTOL</p>
-          <p>Développeur web Full Stack</p>
+        <div className="mt-60">
+          <h1 className="text-6xl mb-14 text-black">Bonjour !</h1>
+          <p className="text-4xl mb-14 text-black">
+            Je m'appelle Marc et je suis Développeur web Full Stack...
+          </p>
           <Button type={"button"} onClick={() => navigate("/about")}>
-            Continuer
+            En savoir plus à mon sujet?
           </Button>
-        </>
+        </div>
       ) : (
-        <>
-          <h1 className="text-4xl">Hello !</h1>
-          <p className="text-2xl">Marc LANTOL</p>
-          <p>Full Stack web developer</p>
+        <div className="mt-60">
+          <h1 className="text-6xl mb-14 text-black">Hello !</h1>
+          <p className="text-4xl mb-14 text-black">
+            My name is Marc and I'am a Full Stack web developer...
+          </p>
           <Button type={"button"} onClick={() => navigate("/about")}>
-            Continue
+            Want to learn more about me?
           </Button>
-        </>
+        </div>
       )}
     </div>
   );

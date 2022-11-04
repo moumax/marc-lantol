@@ -97,7 +97,7 @@ function App() {
           ) : (
             <div className="min-h-screen bg-white p-10">
               <Routes>
-                <Route exact path="/" element={<Home />} />
+                <Route exact path="/marc-lantol" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/projects" element={<Projects />} />
