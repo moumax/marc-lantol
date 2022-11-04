@@ -9,14 +9,22 @@ import { DarkContext } from "./context/DarkContext";
 import { LangContext } from "./context/LangContext";
 
 function App() {
-  const [dark, setDark] = useState(false);
+  const [dark, setDark] = useState(true);
   const [french, setFrench] = useState(true);
 
+  // Append className for darkMode on buttons
+  let className = "form-check-label inline-block";
+  if (dark === true) {
+    className += " text-white";
+  } else {
+    className += " text-black";
+  }
+
   const switcher = () => {
-    if (dark) {
-      setDark(false);
-    } else {
+    if (!dark) {
       setDark(true);
+    } else {
+      setDark(false);
     }
   };
   const langSwitcher = () => {
@@ -34,7 +42,7 @@ function App() {
           <div className="flex absolute left-1/2 m-4">
             <div className="form-check form-switch">
               <input
-                className="form-check-input appearance-none w-9 -ml-10 rounded-full float-left h-5 align-top bg-black bg-no-repeat bg-contain checked:bg-gray-300 focus:outline-none cursor-pointer shadow-sm"
+                className="mr-3 appearance-none w-9 focus:outline-none checked:bg-blue-300 h-5 bg-gray-300 rounded-full before:inline-block before:rounded-full before:bg-blue-500 before:h-4 before:w-4 checked:before:translate-x-full shadow-inner transition-all duration-300 before:ml-0.5"
                 type="checkbox"
                 role="switch"
                 id="flexSwitchCheckDefault"
@@ -42,17 +50,17 @@ function App() {
               ></input>
               {dark ? (
                 <label
-                  className="form-check-label inline-block text-black"
+                  className="form-check-label inline-block text-white"
                   htmlFor="flexSwitchCheckDefault"
                 >
                   White Mode
                 </label>
               ) : (
                 <label
-                  className="form-check-label inline-block text-white"
+                  className="form-check-label inline-block text-black"
                   htmlFor="flexSwitchCheckDefault"
                 >
-                  White Mode
+                  Dark Mode
                 </label>
               )}
             </div>
@@ -60,30 +68,24 @@ function App() {
           <div className="flex absolute left-40 m-4">
             <div className="form-check form-switch">
               <input
-                className="form-check-input appearance-none w-9 -ml-10 rounded-full float-left h-5 align-top bg-black bg-no-repeat bg-contain checked:bg-gray-300 focus:outline-none cursor-pointer shadow-sm"
+                className="mr-3 appearance-none w-9 focus:outline-none checked:bg-blue-300 h-5 bg-gray-300 rounded-full before:inline-block before:rounded-full before:bg-blue-500 before:h-4 before:w-4 checked:before:translate-x-full shadow-inner transition-all duration-300 before:ml-0.5"
                 type="checkbox"
                 role="switch"
-                id="flexSwitchCheck"
+                id="flexSwitchCheckDefault"
                 onClick={langSwitcher}
               ></input>
               {french ? (
-                <label
-                  className="form-check-label inline-block text-black"
-                  htmlFor="flexSwitchCheck"
-                >
+                <label className={className} htmlFor="flexSwitchCheck">
                   Français
                 </label>
               ) : (
-                <label
-                  className="form-check-label inline-block text-black"
-                  htmlFor="flexSwitchCheck"
-                >
+                <label className={className} htmlFor="flexSwitchCheck">
                   English
                 </label>
               )}
             </div>
           </div>
-          {dark === false ? (
+          {dark === true ? (
             <div className="min-h-screen bg-gradient-to-r from-blue-400 to-blue-900 p-10">
               <Routes>
                 <Route exact path="/" element={<Home />} />
