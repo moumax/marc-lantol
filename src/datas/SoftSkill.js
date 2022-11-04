@@ -19,7 +19,7 @@ const SoftSkill = [
   {
     id: 3,
     image: teamwork,
-    texte: "Teamwork",
+    texte: "Travail d'équipe",
   },
   {
     id: 4,

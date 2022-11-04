@@ -34,7 +34,7 @@ const SoftSkillEnglish = [
   {
     id: 6,
     image: temps,
-    texte: "Time gestion",
+    texte: "Time management",
   },
 ];
 

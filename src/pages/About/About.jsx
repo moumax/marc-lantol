@@ -30,7 +30,11 @@ export function About() {
           </>
         )}
       </div>
-      <h2 className="text-3xl m-4 text-center">Soft skills</h2>
+      {french ? (
+        <h2 className="text-3xl m-4 text-center">Compétences personnelles</h2>
+      ) : (
+        <h2 className="text-3xl m-4 text-center">Soft skills</h2>
+      )}
       {french ? (
         <div className="flex gap-20 justify-center mb-10">
           {SoftSkill.map((skill) => (
@@ -44,13 +48,21 @@ export function About() {
           ))}
         </div>
       )}
-      <h2 className="text-3xl m-4 text-center">Hard skills</h2>
+      {french ? (
+        <h2 className="text-3xl m-4 text-center">Stack technique</h2>
+      ) : (
+        <h2 className="text-3xl m-4 text-center">Technical stack</h2>
+      )}
       <div className="flex gap-20 justify-center mb-10">
         {HardSkill.map((skill) => (
           <HardSkills skill={skill} key={skill.id} />
         ))}
       </div>
-      <h2 className="text-3xl m-4 text-center">Hobbies</h2>
+      {french ? (
+        <h2 className="text-3xl m-4 text-center">Passe-temps</h2>
+      ) : (
+        <h2 className="text-3xl m-4 text-center">Hobbies</h2>
+      )}
       {french ? (
         <div className="flex gap-20 justify-center">
           {Hobbie.map((like) => (
