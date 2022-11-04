@@ -14,19 +14,15 @@ function App() {
 
   const switcher = () => {
     if (dark) {
-      console.warn(dark);
       setDark(false);
     } else {
-      console.warn(dark);
       setDark(true);
     }
   };
   const langSwitcher = () => {
     if (french) {
-      console.warn(french);
       setFrench(false);
     } else {
-      console.warn(french);
       setFrench(true);
     }
   };

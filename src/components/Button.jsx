@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { DarkContext } from "../context/DarkContext";
 
 const Button = (props) => {
-  const [dark, setDark] = useContext(DarkContext);
+  const [dark] = useContext(DarkContext);
 
   if (dark === false) {
     return (

@@ -8,8 +8,8 @@ import { LangContext } from "../../context/LangContext";
 export function Contact() {
   const navigate = useNavigate();
   const [state, handleSubmit] = useForm("mzbwjygp");
-  const [dark, setDark] = useContext(DarkContext);
-  const [french, setFrench] = useContext(LangContext);
+  const [dark] = useContext(DarkContext);
+  const [french] = useContext(LangContext);
   if (state.succeeded) {
     return (
       <div>
@@ -31,8 +31,17 @@ export function Contact() {
   return (
     <div>
       <div className="flex justify-between mb-28">
-        <Button onClick={() => navigate("/about")}>Skills</Button>
-        <Button onClick={() => navigate("/projects")}>Mes projets</Button>
+        {french ? (
+          <>
+            <Button onClick={() => navigate("/about")}>Compétences</Button>
+            <Button onClick={() => navigate("/projects")}>Mes projets</Button>
+          </>
+        ) : (
+          <>
+            <Button onClick={() => navigate("/about")}>Skills</Button>
+            <Button onClick={() => navigate("/projects")}>My projects</Button>
+          </>
+        )}
       </div>
       {dark ? (
         <form

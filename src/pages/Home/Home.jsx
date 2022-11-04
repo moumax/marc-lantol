@@ -5,7 +5,7 @@ import { LangContext } from "../../context/LangContext";
 
 export function Home() {
   const navigate = useNavigate();
-  const [french, setFrench] = useContext(LangContext);
+  const [french] = useContext(LangContext);
 
   return (
     <div className="text-center ">
