@@ -5,11 +5,11 @@ import proactif from "../assets/softskills/proactif.png";
 import patience from "../assets/softskills/patience.png";
 import temps from "../assets/softskills/temps.png";
 
-const SoftSkill = [
+const SoftSkillEnglish = [
   {
     id: 1,
     image: autonomie,
-    texte: "Autonomie",
+    texte: "Autonomy",
   },
   {
     id: 2,
@@ -19,12 +19,12 @@ const SoftSkill = [
   {
     id: 3,
     image: teamwork,
-    texte: "Travail d'équipe",
+    texte: "Teamwork",
   },
   {
     id: 4,
     image: proactif,
-    texte: "Proactivité",
+    texte: "Proactivity",
   },
   {
     id: 5,
@@ -34,8 +34,8 @@ const SoftSkill = [
   {
     id: 6,
     image: temps,
-    texte: "Gestion du temps",
+    texte: "Time management",
   },
 ];
 
-export default SoftSkill;
+export default SoftSkillEnglish;
