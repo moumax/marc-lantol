@@ -20,12 +20,12 @@ export function About() {
       <div className="flex justify-between mb-36">
         {french ? (
           <>
-            <Button onClick={() => navigate("/")}>Accueil</Button>
+            <Button onClick={() => navigate("/marc-lantol")}>Accueil</Button>
             <Button onClick={() => navigate("/contact")}>Contactez moi</Button>
           </>
         ) : (
           <>
-            <Button onClick={() => navigate("/")}>Home</Button>
+            <Button onClick={() => navigate("/marc-lantol")}>Home</Button>
             <Button onClick={() => navigate("/contact")}>Contact me</Button>
           </>
         )}

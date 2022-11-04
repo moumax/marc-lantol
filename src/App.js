@@ -39,7 +39,7 @@ function App() {
     <>
       <DarkContext.Provider value={[dark, setDark]}>
         <LangContext.Provider value={[french, setFrench]}>
-          <div className="flex absolute left-1/2 m-4">
+          <div className="flex absolute left-1/3 m-4 top-8">
             <div className="form-check form-switch">
               <input
                 className="mr-3 appearance-none w-9 focus:outline-none checked:bg-blue-300 h-5 bg-gray-300 rounded-full before:inline-block before:rounded-full before:bg-blue-500 before:h-4 before:w-4 checked:before:translate-x-full shadow-inner transition-all duration-300 before:ml-0.5"
@@ -65,7 +65,7 @@ function App() {
               )}
             </div>
           </div>
-          <div className="flex absolute left-40 m-4">
+          <div className="flex absolute right-1/3 m-4 top-8 ml-56">
             <div className="form-check form-switch">
               <input
                 className="mr-3 appearance-none w-9 focus:outline-none checked:bg-blue-300 h-5 bg-gray-300 rounded-full before:inline-block before:rounded-full before:bg-blue-500 before:h-4 before:w-4 checked:before:translate-x-full shadow-inner transition-all duration-300 before:ml-0.5"

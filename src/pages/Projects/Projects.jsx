@@ -15,7 +15,7 @@ export function Projects() {
         <>
           <div className="flex justify-between mb-10">
             <Button onClick={() => navigate("/contact")}>Me contacter</Button>
-            <Button onClick={() => navigate("/")}>Suivant</Button>
+            <Button onClick={() => navigate("/marc-lantol")}>Suivant</Button>
           </div>
           <h1 className="text-6xl mb-14 text-center">Mes projects</h1>
         </>
@@ -23,7 +23,7 @@ export function Projects() {
         <>
           <div className="flex justify-between mb-10">
             <Button onClick={() => navigate("/contact")}>Contact me</Button>
-            <Button onClick={() => navigate("/")}>Next</Button>
+            <Button onClick={() => navigate("/marc-lantol")}>Next</Button>
           </div>
           <h1 className="text-6xl mb-14 text-center">My projects</h1>
         </>
