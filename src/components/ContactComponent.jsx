@@ -41,7 +41,7 @@ const ContactComponent = () => {
         placeholder="06 21 32 43 12"
       ></input>
       <ValidationError prefix="Email" field="email" errors={state.errors} />
-      <label className="m-3" for="message">
+      <label className="m-3" htmlFor="message">
         Votre message
       </label>
       <textarea

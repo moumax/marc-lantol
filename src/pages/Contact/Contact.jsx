@@ -82,7 +82,7 @@ export function Contact() {
             placeholder="555 233 443"
           ></input>
           <ValidationError prefix="Email" field="email" errors={state.errors} />
-          <label className="m-3" for="message">
+          <label className="m-3" htmlFor="message">
             Your message
           </label>
           <textarea
