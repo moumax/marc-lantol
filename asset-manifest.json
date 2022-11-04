@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/marc-lantol/static/css/main.e884296e.css",
+    "main.js": "/marc-lantol/static/js/main.d399799c.js",
+    "static/media/post.png": "/marc-lantol/static/media/post.5bf52000d9f69d789cfc.png",
+    "static/media/movieflix.png": "/marc-lantol/static/media/movieflix.5bcb91e96cecb52dc8e3.png",
+    "static/media/obsstjean.png": "/marc-lantol/static/media/obsstjean.55e825f9ea2b27519913.png",
+    "static/media/lumios.png": "/marc-lantol/static/media/lumios.2b6b2c52fb0eb99f2960.png",
+    "static/media/node.png": "/marc-lantol/static/media/node.00deb5cd531757ef31bf.png",
+    "static/media/cinema.png": "/marc-lantol/static/media/cinema.44feb0a0fe72c8c08c4f.png",
+    "static/media/temps.png": "/marc-lantol/static/media/temps.3d896b25cad8ec8a8276.png",
+    "static/media/organisation.png": "/marc-lantol/static/media/organisation.b64a22e4135456b1e513.png",
+    "static/media/patience.png": "/marc-lantol/static/media/patience.26fdc1ff0d9812bdda69.png",
+    "static/media/proactif.png": "/marc-lantol/static/media/proactif.b4905dd8078a14afe968.png",
+    "static/media/teamwork.png": "/marc-lantol/static/media/teamwork.f1343cfdcc4c8769c7af.png",
+    "static/media/photo.png": "/marc-lantol/static/media/photo.fcc75547efa004612ed4.png",
+    "static/media/autonomie.png": "/marc-lantol/static/media/autonomie.1b527360ad922ace4381.png",
+    "static/media/git.png": "/marc-lantol/static/media/git.6cc8ddb6fee20177f611.png",
+    "static/media/astronomie.png": "/marc-lantol/static/media/astronomie.a7adefa9a2375017273d.png",
+    "index.html": "/marc-lantol/index.html",
+    "main.e884296e.css.map": "/marc-lantol/static/css/main.e884296e.css.map",
+    "main.d399799c.js.map": "/marc-lantol/static/js/main.d399799c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e884296e.css",
+    "static/js/main.d399799c.js"
+  ]
+}
