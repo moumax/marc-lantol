@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/marc-lantol/static/css/main.e884296e.css",
-    "main.js": "/marc-lantol/static/js/main.d399799c.js",
+    "main.js": "/marc-lantol/static/js/main.d774ea5a.js",
     "static/media/post.png": "/marc-lantol/static/media/post.5bf52000d9f69d789cfc.png",
     "static/media/movieflix.png": "/marc-lantol/static/media/movieflix.5bcb91e96cecb52dc8e3.png",
     "static/media/obsstjean.png": "/marc-lantol/static/media/obsstjean.55e825f9ea2b27519913.png",
@@ -19,10 +19,10 @@
     "static/media/astronomie.png": "/marc-lantol/static/media/astronomie.a7adefa9a2375017273d.png",
     "index.html": "/marc-lantol/index.html",
     "main.e884296e.css.map": "/marc-lantol/static/css/main.e884296e.css.map",
-    "main.d399799c.js.map": "/marc-lantol/static/js/main.d399799c.js.map"
+    "main.d774ea5a.js.map": "/marc-lantol/static/js/main.d774ea5a.js.map"
   },
   "entrypoints": [
     "static/css/main.e884296e.css",
-    "static/js/main.d399799c.js"
+    "static/js/main.d774ea5a.js"
   ]
 }
