@@ -88,7 +88,7 @@ function App() {
           {dark === true ? (
             <div className="min-h-screen bg-gradient-to-r from-blue-400 to-blue-900 p-10">
               <Routes>
-                <Route exact path="/" element={<Home />} />
+                <Route path="/marc-lantol" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/projects" element={<Projects />} />
