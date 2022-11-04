@@ -3,16 +3,27 @@ import { useNavigate } from "react-router-dom";
 import { useForm, ValidationError } from "@formspree/react";
 import Button from "../../components/Button";
 import { DarkContext } from "../../context/DarkContext";
+import { LangContext } from "../../context/LangContext";
 
 export function Contact() {
   const navigate = useNavigate();
   const [state, handleSubmit] = useForm("mzbwjygp");
   const [dark, setDark] = useContext(DarkContext);
+  const [french, setFrench] = useContext(LangContext);
   if (state.succeeded) {
     return (
       <div>
-        <p>Formulaire bien envoyé !</p>{" "}
-        <Button onClick={() => navigate("/")}>Retour à l'accueil</Button>
+        {french ? (
+          <>
+            <p>Formulaire bien envoyé !</p>
+            <Button onClick={() => navigate("/")}>Retour à l'accueil</Button>
+          </>
+        ) : (
+          <>
+            <p>Form was well sent !</p>
+            <Button onClick={() => navigate("/")}>Return to Home</Button>
+          </>
+        )}
       </div>
     );
   }
